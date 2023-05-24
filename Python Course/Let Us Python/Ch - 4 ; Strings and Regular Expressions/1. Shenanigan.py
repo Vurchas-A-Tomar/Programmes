@@ -1,0 +1,15 @@
+s = 'Shenanigan'
+
+print(s[0], s[1])
+print(s[-1], s[-2])
+print(s[2:])
+print(s[:6])
+print(s[0:6])
+print(s[:-4])
+print(s[0:-4])
+print(s)
+print(s[::2])
+print(s[::3])
+print(s[::4])
+print(s + 'Type')
+print(s[:6] + 'Wabbite')
