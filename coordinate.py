@@ -41,7 +41,6 @@ If you want to find a random point in a certain quadrant, type (2)
         x, y = input('Enter the Coordinates (Enter a comma after each point): ').split(',')
         x = int(x)
         y = int(y)
-        print(f'{x},{y}')
         point = Point(x, y)
         print(point.find_quadrant())
 
