@@ -6,18 +6,18 @@ class Point:
 # Finds quadrant of the point given
     def find_quadrant(self):
         output = ''
-        if self.x and self.y == 0:
+        if self.x == 0 and self.y == 0:
             output = 'Origin'
         elif self.y == 0:
             if abs(self.x) == self.x:
-                output = 'Above and Parallel to the x-axis'
+                output = 'On Positive Side of the x-axis'
             else:
-                output = 'Below and Parallel to the x-axis'
+                output = 'On Negative Side of the x-axis'
         elif self.x == 0:
             if abs(self.y) == self.y:
-                output = 'Above and Parallel to the y-axis'
+                output = 'On Positive Side of the y-axis'
             else:
-                output = 'Below and Parallel to the y-axis'
+                output = 'On Negative Side of y-axis'
         elif abs(self.x) == self.x:
             if abs(self.y) == self.y:
                 output = 'Quadrant 1'
@@ -47,6 +47,6 @@ If you want to find a random point in a certain quadrant, type (2)
 except TypeError:
     print('Invalid Input, enter a point')
 except ValueError:
-    print('Invalid Input, enter appropriately')
+    print('Invalid Input, enter a point')
 
 # -----------------------------------------------------------------------------------------------------------------------
